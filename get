@@ -27,7 +27,7 @@ function checkRequirement () {
 }
 
 checkRequirement "wget"
-checkRequirement "unzip"
+checkRequirement "7z"
 
 info "Trying to find the correct directory..."
 for path in "${paths[@]}"; do
@@ -67,7 +67,7 @@ if [ -n "$haPath" ]; then
     mkdir "$haPath/custom_components/hacs"
 
     info "Unpacking HACS..."
-    unzip "$haPath/custom_components/hacs.zip" -d "$haPath/custom_components/hacs" >/dev/null 2>&1
+    7z x "$haPath/custom_components/hacs.zip" -0"$haPath/custom_components/hacs" >/dev/null 2>&1
 
     info "Removing HACS zip file..."
     rm "$haPath/custom_components/hacs.zip"
