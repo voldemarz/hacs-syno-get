@@ -1,5 +1,5 @@
 #!/bin/bash
-# wget -O - https://get.hacs.xyz | bash -
+# wget -O - https://raw.githubusercontent.com/voldemarz/hacs-syno-get/main/get | bash -
 set -e
 
 RED_COLOR='\033[0;31m'
