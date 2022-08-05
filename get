@@ -67,7 +67,7 @@ if [ -n "$haPath" ]; then
     mkdir "$haPath/custom_components/hacs"
 
     info "Unpacking HACS..."
-    7z x "$haPath/custom_components/hacs.zip" -0"$haPath/custom_components/hacs" >/dev/null 2>&1
+    7z x "$haPath/custom_components/hacs.zip" -o"$haPath/custom_components/hacs" >/dev/null 2>&1
 
     info "Removing HACS zip file..."
     rm "$haPath/custom_components/hacs.zip"
